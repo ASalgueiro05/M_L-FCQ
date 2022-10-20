@@ -13,8 +13,15 @@ if uploaded_file is not None:
   label = teachable_machine_classification(image, 'keras_model.h5') 
   if label== 0:
     st.write("Tortillas de Harina :)")
+    
+  else:
+    st.write("No son tortillas de harina")
+    
   if label== 1:
     st.write("Empanadas")
+    
+  else:
+    st.write("No son empanadas")
 
 genre = st.radio("Que prefieres?",("Empanadas","Tortillas de harina","Sopa de pollo"))
 st.balloons()
