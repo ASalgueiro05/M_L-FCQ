@@ -5,3 +5,4 @@ st.sidebar.image("https://i.ytimg.com/vi/xEzimIGQjIg/sddefault.jpg")
 boton = st.button("Globos")
 if boton:
   st.balloons()
+  
